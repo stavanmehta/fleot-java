@@ -1,0 +1,20 @@
+{
+    "name": "Turo",
+    "fields": [
+        {
+            "fieldName": "turoId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190519005642",
+    "javadoc": "Jhipster entity model for fleot",
+    "entityTableName": "turo",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

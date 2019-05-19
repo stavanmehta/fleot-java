@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.fleot.app"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "fleotapp",
+    "packageName": "com.fleot.app",
+    "packageFolder": "com/fleot/app",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "YTQ4NDk4MWI4NWFkMDU2YjdiZDVjZjE3MjZjODExNjE4ZGYwNTZiZjY4NjFiMjdhMmI5ZWRkODE2YTRjY2Q4Mzc2ZTM2MzE0OGIzMjMxMmE3ZmMyZTFiOGYxNGNmYmNiMjZmMzVmMTgyMmY4ZjBhOTkwNzI1ZDZlNWZkYmJkZmE=",
+    "clientFramework": "react",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "herokuAppName": "fleotapp",
+    "herokuDeployType": "git"
+  }
+}

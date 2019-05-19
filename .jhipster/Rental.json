@@ -1,0 +1,40 @@
+{
+    "name": "Rental",
+    "fields": [
+        {
+            "fieldName": "startAt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "endAat",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "car",
+            "otherEntityRelationshipName": "rental",
+            "relationshipName": "car",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "fleetOwner",
+            "otherEntityRelationshipName": "rental",
+            "relationshipName": "fleetowner",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190519005650",
+    "entityTableName": "rental",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
