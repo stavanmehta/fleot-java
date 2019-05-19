@@ -1,0 +1,116 @@
+{
+    "name": "Car",
+    "fields": [
+        {
+            "fieldName": "brand",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "model",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "registrationNo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "image",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "manufacturerYear",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "driverId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ageRestriction",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dailyRate",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "hourlyRate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "milesSurcharge",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "lateReturnFee",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cleaningFee",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "deposit",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "carType",
+            "otherEntityRelationshipName": "car",
+            "relationshipName": "cartype",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "fleetOwner",
+            "otherEntityRelationshipName": "car",
+            "relationshipName": "fleetowner",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190519005647",
+    "entityTableName": "car",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

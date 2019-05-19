@@ -1,0 +1,29 @@
+{
+    "name": "CarType",
+    "fields": [
+        {
+            "fieldName": "typeName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "car",
+            "otherEntityRelationshipName": "cartype",
+            "relationshipName": "car"
+        }
+    ],
+    "changelogDate": "20190519005648",
+    "entityTableName": "car_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -43,6 +43,20 @@ public class CacheConfiguration {
             createCache(cm, com.fleot.app.domain.User.class.getName());
             createCache(cm, com.fleot.app.domain.Authority.class.getName());
             createCache(cm, com.fleot.app.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.fleot.app.domain.Turo.class.getName());
+            createCache(cm, com.fleot.app.domain.Album.class.getName());
+            createCache(cm, com.fleot.app.domain.Photo.class.getName());
+            createCache(cm, com.fleot.app.domain.Photo.class.getName() + ".tags");
+            createCache(cm, com.fleot.app.domain.Tag.class.getName());
+            createCache(cm, com.fleot.app.domain.Tag.class.getName() + ".photos");
+            createCache(cm, com.fleot.app.domain.FleetOwner.class.getName());
+            createCache(cm, com.fleot.app.domain.FleetOwner.class.getName() + ".cars");
+            createCache(cm, com.fleot.app.domain.FleetOwner.class.getName() + ".drivers");
+            createCache(cm, com.fleot.app.domain.Car.class.getName());
+            createCache(cm, com.fleot.app.domain.CarType.class.getName());
+            createCache(cm, com.fleot.app.domain.CarType.class.getName() + ".cars");
+            createCache(cm, com.fleot.app.domain.Driver.class.getName());
+            createCache(cm, com.fleot.app.domain.Rental.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
